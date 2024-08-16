@@ -6,13 +6,15 @@
     },
     "routes": [{
         "src": "/(.*)",
-        "dest": "/api/index.php"
+        "dest": "/"
     }],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://freelancer-backend-gilt.vercel.app",
         "APP_KEY":"base64:8HTOpLbYJL6o2x6HargpyNciYS3mWVEiaXZZHHuzrQA=",
+        "FRONTEND_URL":"https://freelancer-lac-sigma.vercel.app/",
+
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
