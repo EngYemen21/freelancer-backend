@@ -16,7 +16,7 @@ return new class extends Migration
             // $table->integer('user_id')->unsigned(); // Foreign key referencing 'users' table
             $table->string('title');
             $table->longText('description');
-            $table->integer('price',10,2);//decimal('price',10,2)
+            $table->integer('price');//decimal('price',10,2)
             $table->date('delivery_time');
             $table->string('image');
             $table->timestamps();
