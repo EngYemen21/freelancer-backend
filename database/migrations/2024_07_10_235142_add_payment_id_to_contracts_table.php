@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::table('contracts', function (Blueprint $table) {
             //
-            if (!Schema::hasColumn('contracts', 'payment_id')) {
+            // if (!Schema::hasColumn('contracts', 'payment_id')) {
                 $table->unsignedBigInteger('payment_id')->nullable();
-            }
+            // }
 
             // تغيير العمود ليكون غير قابل للنول إذا كان موجودًا بالفعل
-            $table->unsignedBigInteger('payment_id')->change();
+            // $table->unsignedBigInteger('payment_id')->change();
 
             // إضافة المفتاح الأجنبي
             $table->foreign('payment_id')->references('id')->on('payments')->onDelete('cascade');

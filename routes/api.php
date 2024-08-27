@@ -92,9 +92,6 @@ Route::get('/auth/google/callback/', function () {
 
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
-Route::get('/gg',function(){
-    return "hello";
-});
 
 Route::post('emailverify', [AuthController::class, 'emailverify']);
 Route::post('forgotpassword', [AuthController::class, 'forgotpassword']);

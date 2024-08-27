@@ -46,11 +46,7 @@ class AuthController extends Controller
         $recaptchaResponse = $request->input('recaptcha');
         $recaptchaSecret = '6LfOcwEqAAAAAP2fEu1KSX-UpkfDtS7Pby0IMCSB';
 
-        // $response = Http::post('https://www.google.com/recaptcha/api/siteverify', [
-        //     'secret' => '6LfOcwEqAAAAAP2fEu1KSX-UpkfDtS7Pby0IMCSB',
-        //     'response' => $recaptchaResponse,
-        // ]);
-        // $body = $response->json();
+      
 
         $url = 'https://www.google.com/recaptcha/api/siteverify';
         $info = array(
