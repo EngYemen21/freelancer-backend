@@ -16,7 +16,7 @@ class RegisterRequest extends FormRequest {
             'firstName' => 'required|string|max:255',
             'lastName' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email|max:255',
-            'recaptcha'=>'required',
+            // 'recaptcha'=>'required',
             'password' => [
                 'required',
                 'string',
