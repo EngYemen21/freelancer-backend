@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('username')->nullable();;
             $table->string('phone_number')->nullable();
+            // $table->string('Specialization')->default('لا يوجد');
+
             $table->string('image')->nullable();
             $table->date('date_of_birth')->nullable();
             $table->timestamp('email_verified_at')->nullable();

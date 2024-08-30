@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->string('Specialization');
-            $table->string('summary');
+            $table->string('Specialization')->default('لا يوجد');
+
+            $table->string('summary')->default('لا يوجد');
 
         });
     }
